@@ -5,6 +5,10 @@ Test Rest Api Logique
 
 **Server:** NodeJS 16.18, NestJS(Typescript), NPM 8.19, MariaDB 10
 
+## Installation
+Live Demo :
+http://165.22.242.120:3030
+(Use postman collection to access the API)
 
 ## Installation
 Prerequisites :
