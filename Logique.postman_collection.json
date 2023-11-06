@@ -1,0 +1,255 @@
+{
+	"info": {
+		"_postman_id": "f3ffed48-4922-41ca-9070-d42fba4f408d",
+		"name": "Logique",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5191141"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Ardi",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "rhrh",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "ardiii@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "awdawd",
+							"type": "text"
+						},
+						{
+							"key": "photos",
+							"type": "file",
+							"src": "/D:/Fikry/Dokument/522-536x354.jpg"
+						},
+						{
+							"key": "creditcard_type",
+							"value": "Visa",
+							"type": "text"
+						},
+						{
+							"key": "creditcard_number",
+							"value": "1231241241",
+							"type": "text"
+						},
+						{
+							"key": "creditcard_name",
+							"value": "Jaka",
+							"type": "text"
+						},
+						{
+							"key": "creditcard_expired",
+							"value": "2025",
+							"type": "text"
+						},
+						{
+							"key": "creditcard_cvv",
+							"value": "1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{backend}}/user",
+					"host": [
+						"{{backend}}"
+					],
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "fikry",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "awdawd",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "awdwad",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "awdawd",
+							"type": "text"
+						},
+						{
+							"key": "photos",
+							"type": "file",
+							"src": "/D:/Fikry/Dokument/522-536x354.jpg"
+						},
+						{
+							"key": "creditcard_type",
+							"value": "awdawd",
+							"type": "text"
+						},
+						{
+							"key": "creditcard_number",
+							"value": "awdawd",
+							"type": "text"
+						},
+						{
+							"key": "creditcard_name",
+							"value": "awdawd",
+							"type": "text"
+						},
+						{
+							"key": "creditcard_expired",
+							"value": "awdad",
+							"type": "text"
+						},
+						{
+							"key": "creditcard_cvv",
+							"value": "awdawd",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{backend}}/user/055b9121-74e2-498f-8b9d-c8400c331568",
+					"host": [
+						"{{backend}}"
+					],
+					"path": [
+						"user",
+						"055b9121-74e2-498f-8b9d-c8400c331568"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{backend}}/user/list?q=fik&ob=email&sb=asc&of=1&lt=1",
+					"host": [
+						"{{backend}}"
+					],
+					"path": [
+						"user",
+						"list"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "fik"
+						},
+						{
+							"key": "ob",
+							"value": "email"
+						},
+						{
+							"key": "sb",
+							"value": "asc"
+						},
+						{
+							"key": "of",
+							"value": "1"
+						},
+						{
+							"key": "lt",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{backend}}/user/055b9121-74e2-498f-8b9d-c8400c331568",
+					"host": [
+						"{{backend}}"
+					],
+					"path": [
+						"user",
+						"055b9121-74e2-498f-8b9d-c8400c331568"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "key",
+				"value": "key",
+				"type": "string"
+			},
+			{
+				"key": "value",
+				"value": "HiJhvL$T27@1u^%u86g",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "backend",
+			"value": "http://165.22.242.120:3000",
+			"type": "string"
+		}
+	]
+}
